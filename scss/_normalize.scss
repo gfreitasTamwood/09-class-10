@@ -23,6 +23,16 @@ p {
    line-height: 1.5;
 }
 
+a {
+   text-decoration: none;
+}
+
+input {
+   background-color: transparent;
+   border: 0px none;
+   border-bottom: 1px solid whitesmoke;
+}
+
 [class*="chevron"] {
    text-decoration: none;
    color: $defaultRed;
@@ -30,8 +40,6 @@ p {
    border: 4px solid $defaultRed;
 }
 
-input {
-   background-color: transparent;
-   border: 0px none;
-   border-bottom: 1px solid whitesmoke;
+main > section:nth-child(even) h2 {
+   color: $defaultRed;
 }
