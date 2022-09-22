@@ -1,0 +1,130 @@
+@media (min-width: 1000px) {
+
+   main {
+      align-items: center;
+   }
+
+   main > section > a {
+      padding: 0.3vw;
+      font-size: 20px;
+   }
+
+   header {
+      @include flexBoxColumn;
+      align-items: center;
+   }
+
+   nav {
+      justify-content: space-between;
+      width: 80%;
+      > ul {
+         width: 50%;
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+      }
+
+      li {
+         list-style-type: none;
+      }
+
+      a {
+         color: whitesmoke;
+         text-transform: uppercase;
+         transition: .2s;
+
+         &:hover {
+            color: $defaultRed;
+         }
+      }
+   }
+
+   .about {
+      width: 85%;
+
+      > article {
+
+         > aside {
+            width: 20vh;
+            height: 20vh;
+         }
+
+         div {
+            width: 70%;
+         }
+
+         p::after {
+            content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio eos quae, omnis quo deleniti a reiciendis illum eveniet aut doloribus possimus odio impedit dolorem ea?";
+         }
+      }
+
+      > section {
+         flex-direction: row;
+         justify-content: space-evenly;
+         ul {
+            width: 45%;
+         }
+      }
+   }
+
+   .work {
+      row-gap: 5vh;
+
+      > figure {
+         padding-top: 5%;
+      }
+
+      img {
+         width: 35vh;
+         height: 35vh;
+      }
+   }
+
+   .services {
+      > article {
+         align-items: center;
+
+         > p {
+            width: 70%;
+         }
+      }
+
+      > section {
+         a {
+            font-size: 68px;
+            width: 20vh;
+            height: 20vh;
+         }
+      }
+   }
+
+   .contact {
+      align-items: center;
+      > article,
+      > aside,
+      > section {
+         width: 80%;
+      }
+
+      form {
+         row-gap: 5vh;
+
+         > article:last-child {
+            flex-wrap: nowrap;
+            flex-direction: row;
+            column-gap: 5vh;
+         }
+      }
+
+      [type="submit"] {
+         padding: 1%;
+         width: 15%;
+         align-self: flex-end;
+         cursor: pointer;
+      }
+   }
+
+   input {
+      padding: 1%;
+   }
+}
